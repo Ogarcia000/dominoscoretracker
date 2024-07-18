@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const enableSound = savedSettings.enableSound || false;
         const enableSpecialSound = savedSettings.enableSpecialSound || false;
 
-        const victoryImages = ['../img/victory/img1.png', '../img/victory/img2.png', '../img/victory/img3.png', '../img/victory/img4.png', '../img/victory/img5.png'];
-        const zeroScoreImages = ['../img/lose/img1.png', '../img/lose/img2.png', '../img/lose/img3.png', '../img/lose/img4.png', '../img/lose/img5.png'];
+        const victoryImages = ['../img/victory/img1.jpg', '../img/victory/img2.jpg', '../img/victory/img3.jpg', '../img/victory/img4.jpg', '../img/victory/img5.jpg'];
+        const zeroScoreImages = ['../img/lose/img1.jpg', '../img/lose/img2.jpg', '../img/lose/img3.jpg', '../img/lose/img4.jpg', '../img/lose/img5.jpg'];
         const victorySounds = ['../sounds/victory.mp3'];
         const specialSounds = ['../sounds/goat.mp3'];
 
