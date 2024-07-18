@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const enableSound = savedSettings.enableSound || false;
         const enableSpecialSound = savedSettings.enableSpecialSound || false;
 
-        const victoryImages = ['../img/victory/img1.jpg', '../img/victory/img2.jpg', '../img/victory/img3.jpg', '../img/victory/img4.jpg', '../img/victory/img5.jpg'];
-        const zeroScoreImages = ['../img/lose/goat1.jpg', '../img/lose/goat2.jpg', '../img/lose/goat3.jpg', '../img/lose/goat4.jpg', '../img/lose/goat5.jpg'];
-        const victorySounds = ['../sounds/victory.mp3'];
-        const specialSounds = ['../sounds/goat.mp3'];
+        const victoryImages = ['/img/victory/img1.jpg', '/img/victory/img2.jpg', '/img/victory/img3.jpg', '/img/victory/img4.jpg', '/img/victory/img5.jpg'];
+        const zeroScoreImages = ['/img/lose/goat1.jpg', '/img/lose/goat2.jpg', '/img/lose/goat3.jpg', '/img/lose/goat4.jpg', '/img/lose/goat5.jpg'];
+        const victorySounds = ['/sounds/victory.mp3'];
+        const specialSounds = ['/sounds/goat.mp3'];
 
         if (team1Total >= gameType || team2Total >= gameType) {
             if (team1Total >= gameType && team2Total > 0) {
