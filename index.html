@@ -8,46 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h1>Consules Domino Score</h1>
-            <button id="resetBtn" class="btn btn-primary">Nuevo</button>
-        </div>
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th id="team1Header">Equipo 1</th>
-                        <th id="team2Header">Equipo 2</th>
-                    </tr>
-                </thead>
-                <tbody id="scoreInputs">
-                    <tr>
-                        <td><input type="number" id="team1Score" class="form-control"></td>
-                        <td><input type="number" id="team2Score" class="form-control"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <button id="addPointsBtn" class="btn btn-success">Añadir Puntos</button>
-        <div class="mt-4">
-            <div id="totalSection" class="p-3 mb-3 bg-light text-center">
-                <h4>Total: <span id="totalTeam1">0</span> - <span id="totalTeam2">0</span></h4>
-            </div>
-            <div id="historySection" class="p-3 mb-3 bg-white">
-                <div id="defaultEntry" class="history-item d-flex justify-content-between align-items-center">
-                    <span class="history-label">P1:</span>
-                    <span class="history-points">
-                        <span class="text-red">0</span> - <span class="text-red">0</span>
-                    </span>
-                    <button id="Xbutton" class="btn btn-danger btn-sm" onclick="removeHistoryItem(this)">X</button>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center mt-5">
-            <button id="settingsBtn" class="btn btn-secondary">Configuración</button>
-        </div>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino Count Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="table-container">
+        <table id="dominoTable">
+            <thead>
+                <tr>
+                    <th>Domino</th>
+                    <th>Nosotros</th>
+                    <th>Ellos</th>
+                    <th>Historial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JavaScript will populate rows here -->
+            </tbody>
+        </table>
     </div>
-    <script src="js/script.js"></script>
+    <div class="controls">
+        <label for="dominoSelect">Domino:</label>
+        <select id="dominoSelect">
+            <!-- JavaScript will populate options here -->
+        </select>
+        <label for="pointsInput">Puntos:</label>
+        <input type="number" id="pointsInput" value="1" min="1">
+        <button onclick="addPoint()">Añadir Punto</button>
+        <button onclick="removePoint()">Borrar Punto</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
 </body>
 </html>
