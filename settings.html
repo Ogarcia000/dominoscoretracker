@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Domino</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Configuración de Domino</h1>
+        <form id="settingsForm">
+            <div class="form-group">
+                <label for="team1Name">Nombre del Equipo 1</label>
+                <input type="text" id="team1Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="team2Name">Nombre del Equipo 2</label>
+                <input type="text" id="team2Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="numPlayers">Cantidad de Jugadores</label>
+                <input type="number" id="numPlayers" class="form-control" min="2" max="4" value="2">
+            </div>
+            <div class="form-group">
+                <label for="gameType">Tipo de Juego (Puntos para ganar)</label>
+                <select id="gameType" class="form-control">
+                    <option value="200">200 puntos</option>
+                    <option value="300">300 puntos</option>
+                    <option value="400">400 puntos</option>
+                    <option value="500">500 puntos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="language">Idioma</label>
+                <select id="language" class="form-control">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="enableSound">Activar sonido al ganar</label>
+                <input type="checkbox" id="enableSound">
+            </div>
+            <div class="form-group">
+                <label for="enableSpecialSound">Activar sonido especial si un equipo se queda en cero</label>
+                <input type="checkbox" id="enableSpecialSound">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar Configuración</button>
+        </form>
+    </div>
+    <script src="/js/settings.js"></script>
+</body>
+</html>
